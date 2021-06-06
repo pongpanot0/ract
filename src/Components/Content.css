@@ -1,0 +1,46 @@
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+.content-con {
+    display: flex;
+    justify-content: space-between;
+}
+.content-con:first-child,.content-con:last-child{
+    padding: 5rem 0;
+}
+.content-l img{
+ width: 100%;
+ border-radius: 10px;
+}
+.container-r{
+    padding: 2rem;
+    text-align: right;
+}
+.container-rr{
+    padding:0 auto;
+    text-align: right;
+}
+a{
+    font-size: large;
+   
+}
+.aa{
+    font-weight: 900 solid;
+    color: black;
+    font-size: 3rem;
+     padding-left: 80px;
+     text-align: center;
+     margin: 0 auto;
+}
+.social{
+    font-family: 'kanit';
+}
+@media screen  and (max-width:480px){
+    .content-con{
+        flex-direction: column;
+    }
+    .content-con:nth-child(2).content-r{
+        order:1;
+    }
+}
